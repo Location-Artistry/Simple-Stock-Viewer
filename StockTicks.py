@@ -5,6 +5,9 @@ import datetime as dt
 import numpy as np
 today = dt.date.today()
 
+# Simple streamlit app using python & yfinance to get information on stock highlighted in selectbox
+# Working as a streamlit app test deploy to Heroku
+
 st.write("""
 # Stock Selector
 
@@ -31,7 +34,6 @@ def getStock(tickName):
     st.write("""**RECOMMENDATIONS: **""",
     stockData.recommendations)
     #st.write(stockData.info)
-
 
 getStock(option)
     
